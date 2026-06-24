@@ -1,0 +1,89 @@
+{
+    "folders": [
+	{
+	  "name": "presuma",
+	  "path": "C:\\git\\folder_1\\",
+	},	
+	{
+	  "name": "100fit",
+	  "path": "C:\\git\\folder_2\\"
+	}
+  ],
+  "settings": {
+  // TODO: https://inside-docupedia.bosch.com/confluence/display/ASWIKI/Development+tool+recommendations
+  // git settings
+  "git.detectSubmodules": true,
+  "git.detectSubmodulesLimit": 20,
+  // Extension: GitGraph
+  "git-graph.repository.fetchAndPrune": true,
+  "git-graph.dialog.fetchRemote.prune": true,
+  "git-graph.dialog.fetchRemote.pruneTags": true,
+  "git-graph.repository.fetchAndPruneTags": true,
+  "git-graph.repository.commits.fetchAvatars": true,
+  //show local HEAD when opening GitGraph (instead of top of repo)
+  "git-graph.repository.onLoad.scrollToHead": true,
+
+  // use space instead of Tabs
+  "editor.useTabStops": "false",
+  "editor.insertSpaces": true,
+  
+  // Workbench
+  "workbench.editor.labelFormat": "default",
+  "workbench.colorTheme": "Default Dark Modern",
+  //"workbench.statusBar.visible": "true",
+  "workbench.colorCustomizations": {
+      //"editorRuler.foreground": "blue",
+      //"statusBar.background": "#ff0000"
+      //"editorOverviewRuler.background": "#ff0000", // for the "track" where the scrollThumb lives
+      //"scrollbarSlider.background": "#dddddd" // for the scrollThumb color --> color: https://www.color-hex.com/
+   },
+	  //"terminal.integrated.cwd": "${workspaceFolder}"//"O:\\PreSuma_dev\\EpsDriveSW\\ImplementationSet\\Make\\",
+    "terminal.integrated.profiles.windows": {
+		"PowerShell": null,
+		"Command Prompt": null,
+		"JavaScript Debug Terminal": null,
+		"Select Default Profile": null,
+        "Git_Bash_PreSuMa": {
+			"label": "Git Bash",
+            "path": "C:/Program Files/Git/bin/bash.exe"
+			//"icon": "terminal-cmd"
+        },
+		"Git_Bash_test1": {
+			"label": "Git Bash",
+            "path": "C:/Program Files/Git/bin/bash.exe", 
+			"args": ["--cd=C:\\git\\100fit\\"]
+        },
+		"Git_Bash_test2": {
+			"label": "Git Bash",
+            "path": "C:/Program Files/Git/bin/bash.exe", 
+			"args": ["--cd=C:\\git\\as-mainpath-r18.x\\"]
+        },
+		"Git_Bash_test3": {
+			"label": "Git Bash",
+            "path": "C:/Program Files/Git/bin/bash.exe", 
+			"args": ["--cd=C:\\git\\asmp-dev\\"]
+        },
+		"PreSuMa_cmder":{
+			"label": "PreSuMa cmder ",
+			"path": "C:/WINDOWS/System32/cmd.exe",
+			"args": ["/K", "C:\\git\\presuma\\PreSuma_dev\\EpsDriveSW\\ImplementationSet\\Make\\"]
+		},
+		"terminal.integrated.defaultProfile.windows": "cmder"
+    },
+	
+	"workbench.colorCustomizations": {
+        # Add your theme here 
+		//"terminal.background":"#1D2021"		
+    }
+	  
+    // General settings - unlikely to be overwritten per project or per computer
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "terminal.integrated.scrollback": 10000000000,
+    "editor.renderWhitespace": "all",
+    "editor.wordBasedSuggestions": false,
+    "editor.formatOnSave": false,
+    "editor.rulers": [120],  
+
+    "markdown.styles": ["https://cdn.jsdelivr.net/gh/dhdhagar/vscode-md-preview-light/style.min.css"]
+  },
+}
